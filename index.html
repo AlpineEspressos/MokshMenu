@@ -91,6 +91,24 @@
             display: block; /* Remove extra space below the image */
             margin: 0 auto; /* Center the image horizontally */
         }
+        /* Existing styles... */
+
+        .fixed-footer {
+            position: fixed; /* Keep it in the viewport */
+            bottom: 0;      /* Align it to the bottom */
+            left: 0;        /* Align it to the left */
+            width: 100%;    /* Make it span the entire width */
+            background-color: #f0f0f0; /* Optional: Add a background color for better visibility */
+            padding: 10px 0; /* Optional: Add some padding */
+            text-align: center; /* Optional: Center the image */
+            z-index: 1000;   /* Ensure it's above other content */
+        }
+        .fixed-footer img {
+            max-width: 50%;
+            height: auto;
+            display: block; /* Remove extra space below the image */
+            margin: 0 auto; /* Center the image horizontally */
+        }
     </style>
 </head>
 <body>
