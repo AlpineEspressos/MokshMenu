@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drink Menu</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #e8e6d5;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            color: #5a5d3f;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #4a5335;
+            font-weight: bold;
+        }
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+        .menu-item {
+            background: #fff;
+            border-radius: 15px;
+            padding: 15px;
+            box-shadow: 0px 5px 15px rgba(90, 93, 63, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .menu-item:hover {
+            transform: scale(1.05);
+        }
+        svg {
+            width: 40px;
+            height: 40px;
+            fill: none;
+            stroke: #000;
+            stroke-width: 1.2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+        button {
+            background-color: #9ba17b;
+            color: white;
+            border: none;
+            padding: 8px 14px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background 0.3s;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #7c8461;
+        }
+        .logo {
+            display: block;
+            margin: 20px auto;
+            width: 150px;
+        }
+        .menu-section-heading {
+            font-size: 1.5rem;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            color: #4a5335;
+            font-weight: bold;
+            grid-column: 1 / -1; /* Make it span across both columns */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="sewchic-logo.png" alt="SewChic Logo" class="logo">
+        <h1>Cute & Cozy Beverages</h1>
+
+        <h2 class="menu-section-heading">Coffees</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <h2>Iced Americano</h2>
+                <p>A bold shot of espresso mixed with chilled water and served over ice. Strong, smooth, and refreshingly cold.</p>
+                <p>₹80/-</p>
+                <button>Order Now</button>
+            </div>
+            <div class="menu-item">
+                <h2>Iced Latte</h2>
+                <p>A smooth blend of espresso and chilled milk, served over ice. Creamy, refreshing, and perfectly balanced.</p>
+                <p>₹90/-</p>
+                <button>Order Now</button>
+            </div>
+            <div class="menu-item">
+                <h2>Iced Cappuccino</h2>
+                <p>A rich, bold espresso flavor balanced with creamy, chilled milk and a hint of sweetness, creating a smooth and refreshing taste.</p>
+                <p>₹95/-</p>
+                <button>Order Now</button>
+            </div>
+            <div class="menu-item">
+                <h2>Frappe Chocolate</h2>
+                <p>A rich blend of chocolate, milk, and ice, blended to perfection. Creamy and indulgent.</p>
+                <p>₹110/-</p>
+                <button>Order Now</button>
+            </div>
+            <div class="menu-item">
+                <h2>Cold Coffee</h2>
+                <p>A smooth blend of chilled milk, coffee, and ice, lightly sweetened and frothed to perfection.</p>
+                <p>₹110/-</p>
+                <button>Order Now</button>
+            </div>
+            <div class="menu-item">
+                <h2>Mocha</h2>
+                <p>A rich blend of espresso, steamed milk, and chocolate, topped with a layer of foam.</p>
+                <p>₹149/-</p>
+                <button>Order Now</button>
+            </div>
+            <div class="menu-item">
+                <h2>Add-ons Flavours</h2>
+                <p>Vanilla | Caramel | Hazelnut</p>
+                <p>₹40/-</p>
+                <button>Order Now</button>
+            </div>
+        </div>
+
+        <h2 class="menu-section-heading">Mocktails</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <h2>Blue Curacao</h2>
+                <p>A vibrant and refreshing mocktail with a citrusy blend of blue curacao syrup, lemon, and soda, delivering a perfect balance of sweetness and tang.</p>
+                <p>₹99/-</p>
+                <button>Order Now</button>
+            </div>
+            <div class="menu-item">
+                <h2>Peach Ice tea</h2>
+                <p>A refreshing mocktail infused with the sweet and juicy flavor of peaches, blended with ice and soda for a crisp, cooling finish.</p>
+                <p>₹99/-</p>
+                <button>Order Now</button>
+            </div>
+            <div class="menu-item">
+                <h2>Lemon Ice tea</h2>
+                <p>A refreshing blend of brewed tea, zesty lemon, and ice, offering a perfect balance of citrusy tang and subtle sweetness.</p>
+                <p>₹99/-</p>
+                <button>Order Now</button>
+            </div>
+            <div class="menu-item">
+                <h2>Lemonade classic</h2>
+                <p>A refreshing mix of freshly squeezed lemon juice, sugar, and chilled water, offering a perfect balance of tangy and sweet flavors.</p>
+                <p>₹110/-</p>
+                <button>Order Now</button>
+            </div>
+            <div class="menu-item">
+                <h2>Virgin Moito</h2>
+                <p>A refreshing blend of mint, lime, sugar, and soda, delivering a perfect balance of citrusy tang and cool minty freshness.</p>
+                <p>₹119/-</p>
+                <button>Order Now</button>
+            </div>
+            <div class="menu-item">
+                <h2>Kiwi-mint</h2>
+                <p>A refreshing fusion of tangy kiwi and cool mint, blended with soda and ice for a perfectly balanced sweet and citrusy burst.</p>
+                <p>₹119/-</p>
+                <button>Order Now</button>
+            </div>
+            <div class="menu-item">
+                <h2>Watermelon Mint</h2>
+                <p>A refreshing mix of juicy watermelon and cool mint, blended with ice and soda for a perfectly sweet and revitalizing drink.</p>
+                <p>₹119/-</p>
+                <button>Order Now</button>
+            </div>
+        </div>
+
+        <h2 class="menu-section-heading">Shakes</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <h2>Oreo</h2>
+                <p>A thick and creamy mix of crushed Oreos, milk, and vanilla ice cream, giving a perfect balance of chocolate crunch and velvety smoothness.</p>
+                <p>₹160/-</p>
+                <button>Order Now</button>
+            </div>
+            <div class="menu-item">
+                <h2>Blue Berry</h2>
+                <p>A refreshing and creamy blend of blueberries, milk, and ice cream, with a sweet-tart flavor and a smooth, fruity finish</p>
+                <p>₹160/-</p>
+                <button>Order Now</button>
+            </div>
+            <div class="menu-item">
+                <h2>Hazelnut</h2>
+                <p>A smooth and nutty blend of roasted hazelnuts, milk, and ice cream, with a rich, creamy texture and a hint of caramel-like sweetness.</p>
+                <p>₹170/-</p>
+                <button>Order Now</button>
+            </div>
+            <div class="menu-item">
+                <h2>Strawberry</h2>
+                <p>A creamy and refreshing blend of fresh strawberries, milk, and ice cream, offering a perfect balance of sweetness and slight tartness.</p>
+                <p>₹170/-</p>
+                <button>Order Now</button>
+            </div>
+            <div class="menu-item">
+                <h2>Chocolate</h2>
+                <p>A rich and creamy blend of chocolate syrup, milk, and ice cream, delivering a deep, velvety cocoa flavor with a smooth finish.</p>
+                <p>₹170/-</p>
+                <button>Order Now</button>
+            </div>
+            <div class="menu-item">
+                <h2>Kit-Kat</h2>
+                <p>A rich and velvety blend of crushed Kit Kat, milk, and ice cream, delivering a perfect mix of chocolate crunch and creamy sweetness.</p>
+                <p>₹180/-</p>
+                <button>Order Now</button>
+            </div>
+            <div class="menu-item">
+                <h2>Nuttela Shakes</h2>
+                <p>A strong, rich shot of finely brewed coffee with a bold aroma and smooth crema. Pure, intense, and the perfect energy boost.</p>
+                <p>₹180/-</p>
+                <button>Order Now</button>
+            </div>
+            <div class="menu-item">
+                <h2>Alpine Surprise</h2>
+                <p>Line Surprise is the ultimate signature shake of our café, blending unexpected flavors into a rich, creamy delight with a twist in every sip.</p>
+                <p>₹190/-</p>
+                <button>Order Now</button>
+            </div>
+        </div>
+        <h2 class="menu-section-heading">Cold Coffees</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <h2>Iced Americano</h2>
+                <p>A bold shot of espresso mixed with chilled water and served over ice. Strong, smooth, and refreshingly cold.</p>
+                <p>₹80/-</p>
+                <button>Order Now</button>
+            </div>
+            <div class="menu-item">
+                <h2>Iced-Latte</h2>
+                <p>A smooth blend of espresso and chilled milk, served over ice. Creamy, refreshing, and perfectly balanced.</p>
+                <p>₹90/-</p>
+                <button>Order Now</button>
+            </div>
+            <div class="menu-item">
+                <h2>Iced Cappuccino</h2>
+                <p>A rich, bold espresso flavor balanced with creamy, chilled milk and a hint of sweetness, creating a smooth and refreshing taste. The light foam on top adds a velvety texture.</p>
+                <p>₹95/-</p>
+                <button>Order Now</button>
+            </div>
+            <div class="menu-item">
+                <h2>Frappe Chocolate</h2>
+                <p>A rich blend of chocolate, milk, and ice, blended to perfection. Creamy and indulgent.</p>
+                <p>₹110/-</p>
+                <button>Order Now</button>
+            </div>
+            <div class="menu-item">
+                <h2>Cold Coffee</h2>
+                <p>A smooth blend of chilled milk, coffee, and ice, lightly sweetened and frothed to perfection. Creamy, refreshing, and energizing.</p>
+                <p>₹110/-</p>
+                <button>Order Now</button>
+            </div>
+            <div class="menu-item">
+                <h2>Mocha</h2>
+                <p>A rich blend of espresso, steamed milk, and chocolate, topped with a layer of foam. Creamy, chocolaty, and indulgently smooth.</p>
+                <p>₹149/-</p>
+                <button>Order Now</button>
+            </div>
+            <div class="menu-item">
+                <h2>Add-ons Flavours:</h2>
+                <p>Vanilla | Caramel | Hazelnut</p>
+                <p>₹40/-</p>
+                <button>Order Now</button>
+            </div>
+        </div>
+        <h2 class="menu-section-heading">Draught Beer (Non-alcoholic)</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <h2>Water Melon</h2>
+                <p>Light and refreshing with a subtle sweetness, a juicy watermelon burst, and a crisp, smooth finish.</p>
+                <p>₹160/-</p>
+                <button>Order Now</button>
+            </div>
+            <div class="menu-item">
+                <h2>Green Apple</h2>
+                <p>Crisp and tangy with a refreshing green apple burst. A smooth, slightly sweet finish adds perfect balance.</p>
+                <p>₹160/-</p>
+                <button>Order Now</button>
+            </div>
+            <div class="menu-item">
+                <h2>Piña Colada</h2>
+                <p>Creamy and tropical with a sweet blend of pineapple and coconut. A smooth, refreshing finish lingers with a hint of citrus.</p>
+                <p>₹160/-</p>
+                <button>Order Now</button>
+            </div>
+            <div class="menu-item">
+                <h2>Blue Curacao</h2>
+                <p>Sweet and citrusy with a vibrant orange flavor, balanced by a subtle bitterness and a smooth, refreshing finish.</p>
+                <p>₹160/-</p>
+                <button>Order Now</button>
+            </div>
+            <div class="menu-item">
+                <h2>Strawberry</h2>
+                <p>It will have a crisp, malty base with a refreshing sweetness and slight tartness from ripe strawberries, balanced with subtle hoppy bitterness for a smooth, fruity finish.</p>
+                <p>₹160/-</p>
+                <button>Order Now</button>
+            </div>
+            <div class="fixed-footer">
+        <img src="your-footer-image.jpg" alt="Footer Image">
+    </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
